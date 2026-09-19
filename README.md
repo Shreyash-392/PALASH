@@ -1,84 +1,110 @@
-# 🌿 PALASH VoiceBridge: Offline Multimodal Tribal Language Assistant
+# 🌿 PALASH VoiceBridge: Multimodal Offline Tribal Language Assistant
 
-> **Empowering Education & Communication in Tribal Languages (Santali Ol Chiki & Mundari Devanagari)**  
-> 100% Offline Multimodal Pipeline: ASR + Neural Machine Translation (NMT) + TTS + Interactive FLN Worksheets + Video Lessons.
+> **Empowering Education & Communication in Indigenous Languages (Santali Ol Chiki & Mundari Devanagari)**  
+> 100% Offline Multi-modal Android Solution: ASR + NMT Neural Translation + Native Speaker TTS + Interactive FLN Worksheets + Video Lessons.
 
 ---
 
 ## 📌 Project Overview
 
-**PALASH VoiceBridge** is an AI-powered offline educational assistant engineered for schools, teachers, and communities in tribal regions. It bridges the linguistic divide by enabling seamless bidirectional translation and interactive learning between **Hindi**, **Santali (Ol Chiki script)**, and **Mundari (Devanagari script)** without requiring internet connectivity.
-
-### 🌟 Key Highlights
-- **100% Offline Multimodal Architecture:** Speech Recognition (ASR), Neural Translation (NMT), and Text-to-Speech (TTS) run entirely on-device.
-- **Dual-Language NMT:**
-  - **Santali (sat_Olck):** Instant pre-verified database + IndicTrans2 distilled neural transliterator.
-  - **Mundari (unr_Deva):** Quantized **M2M100 418M ONNX INT8** neural network with zero-copy JNI memory optimizations.
-- **Interactive Setu Worksheets:** FLN-aligned educational worksheets (Water Cycle, Human Body, Plant Growth) with bilingual Ol Chiki / Devanagari script switching and offline PDF export.
-- **Offline Video Lessons:** Embedded video demonstrations for interactive classroom learning.
-- **Direct Speaker TTS Audio:** Speech output played directly through the device media speaker using Android's native speech engine.
+**PALASH VoiceBridge** is an offline multimodal educational assistant engineered for schools, teachers, and student communities in tribal regions. It bridges the linguistic divide by enabling seamless bidirectional translation and interactive learning between **Hindi**, **Santali (Ol Chiki script)**, and **Mundari (Devanagari script)** without requiring any internet connection.
 
 ---
 
-## 📁 Repository Structure
+## 🌟 Key Features & Capabilities
+
+### 🗣️ 1. Dual-Language Voice Translation Slate
+- **Santali (sat_Olck):** Instant human-verified database lookup + IndicTrans2 distilled neural transliterator into **Ol Chiki script**.
+- **Mundari (unr_Deva):** Quantized **M2M100 418M ONNX INT8** neural network with zero-copy JNI memory optimizations & hybrid 0ms verified phrase lookup.
+- **Offline Speech-to-Text (ASR):** Voice dictation in Hindi using Vosk offline speech recognition.
+- **Direct Media Speaker Audio (TTS):** Spoken audio played directly through the device speaker for both Santali (Ol Chiki → Devanagari transliterated speech) and Mundari.
+
+---
+
+### 📝 2. PALASH Setu Interactive Worksheets (FLN Section)
+Designed for Foundational Literacy & Numeracy (FLN) in primary education:
+- **Bilingual Topics:**
+  - 💧 **Water Cycle (जल चक्र / दाः चक्र)**
+  - 🧍 **Human Body (मानव शरीर / हड़मो)**
+  - 🌱 **Plant Growth / Seed Germination (पौधे का विकास / दारु हाराओः)**
+- **Dynamic Script Toggle:** Instant 1-tap switching between **Ol Chiki (Santali)** and **Devanagari (Mundari/Hindi)** scripts.
+- **Offline PDF Generator:** Generate and export print-ready PDF worksheets directly from the device using Android's native `PdfDocument` engine.
+
+---
+
+### 🎥 3. Offline Video Lessons (Multimedia Classroom Section)
+- **Embedded Demonstration Video:** Native offline video player section rendering introductory video lessons (`palash_intro_video.mp4`).
+- **Zero Internet Requirement:** Video assets are bundled locally for seamless playback in remote rural classrooms.
+
+---
+
+### ⚙️ 4. Hybrid Dual-Tier Translation Engine
+```
+                  ┌─────────────────────────────────────────┐
+                  │          Hindi Input Sentence           │
+                  └────────────────────┬────────────────────┘
+                                       │
+                         Is phrase in Verified DB?
+                                      /                                 Yes  /   \ No
+                                    /                                        ▼       ▼
+    ┌──────────────────────────────────┐  ┌──────────────────────────────────┐
+    │  TIER 1: Instant Database Match  │  │   TIER 2: Optimized ONNX Neural  │
+    │   - Latency: 0 ms (Instant)      │  │   - Latency: ~1.5 seconds        │
+    │   - Memory: 0 MB extra RAM       │  │   - RAM: Reduced from 1.15GB → 500MB│
+    │   - Stability: 100% Bulletproof  │  │   - Tokenizer: Viterbi-aligned   │
+    └──────────────────────────────────┘  └──────────────────────────────────┘
+```
+
+---
+
+## 📂 Repository Structure
 
 ```
-PALASH-VoiceBridge/
-├── android_app/               # Complete Android App (Jetpack Compose, Kotlin, ONNX, Vosk, TTS)
+PALASH_VoiceBridge/
+├── android_app/               # Complete Android Application
 │   ├── app/src/main/java/com/palash/voicebridge/
-│   │   ├── data/              # Database, Repositories, Content Loader
+│   │   ├── data/              # Room DB, Verified Phrase DAO (0ms Instant Lookup), Repositories
 │   │   ├── domain/            # Domain Models & Engine Interfaces
-│   │   ├── ml/                # ONNX Inference Engine, SentencePiece Tokenizer, ASR, TTS
-│   │   ├── navigation/        # App Screen Routing
-│   │   ├── ui/                # Compose UI Screens (Voice, Worksheets, Video, Settings)
-│   │   └── util/              # Worksheet PDF Generator & Utilities
-│   └── app/src/main/res/      # UI Resources & Offline Media Assets
+│   │   ├── ml/                # ONNX INT8 Engine, SentencePiece Tokenizer, Vosk ASR, Direct Speaker TTS
+│   │   ├── navigation/        # App Screen Navigation & Routes
+│   │   ├── ui/                # Compose UI Screens:
+│   │   │   ├── voice/         # Voice & Text Translation Slate
+│   │   │   ├── worksheet/     # Interactive Bilingual Worksheets & PDF Export
+│   │   │   ├── video/         # Offline Video Lessons Player
+│   │   │   ├── home/          # Main Navigation Hub
+│   │   │   └── settings/      # System Diagnostics & Engine Status
+│   │   └── util/              # Native Android PdfDocument Generator
+│   └── app/src/main/res/      # UI Layouts, Vector Icons, & Embedded Video Assets
 │
 ├── ml_training_and_export/    # Machine Learning Pipeline
-│   ├── MundariTranslation/    # PyTorch M2M100 Training & Quantization Scripts
-│   └── android_export/        # ONNX INT8 Quantized Models & Vocab
+│   ├── MundariTranslation/    # PyTorch M2M100 Training & Fine-Tuning Scripts
+│   └── android_export/        # ONNX INT8 Quantization & Vocab Files
 │
-├── .gitignore                 # Excludes heavy build binaries (.gradle, build/, .venv, *.apk)
+├── .gitignore                 # Excludes heavy model weights, datasets, & build binaries
 └── README.md                  # Project Documentation
 ```
 
 ---
 
-## 🚀 Quick Setup & Installation
+## 🚀 Quick Setup & Usage Guide
 
-### 1. Android App Setup (Android Studio)
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/YourUsername/PALASH-VoiceBridge.git
-   ```
-2. Open **Android Studio** and select `Open Project` → select the `android_app` directory.
-3. Connect your Android device (Android 9 to 12+) via USB with **USB Debugging** enabled.
-4. Click **Run ▶️** (`Shift + F10`) to compile and install on your device.
-
-### 2. Mundari ONNX Model Deployment
-To enable offline Mundari AI translation on your mobile device:
-1. Connect your device to PC via USB.
-2. Copy the exported INT8 model folder from `ml_training_and_export/android_export/onnx/int8` into your phone's storage:
+### 📱 Option 1: Direct Install via APK (For Judges / End Users)
+1. Download **`palash-release.apk`** to your Android phone (Android 9 to 12+) and tap **Install**.
+2. Copy the exported `onnx_int8` model folder to your phone's storage:
    👉 **`Internal Storage` → `Download` → `onnx_int8`**  
-   *(or `Android/data/com.palash.voicebridge/files/models/onnx_int8/`)*
-
-Inside `onnx_int8/`, ensure the following 4 files are present:
-- `encoder_model.onnx`
-- `decoder_model.onnx`
-- `decoder_with_past_model.onnx`
-- `vocab.json`
+   *(containing `encoder_model.onnx`, `decoder_model.onnx`, `decoder_with_past_model.onnx`, `vocab.json`)*
+3. Launch **PALASH** and start translating!
 
 ---
 
-## 🏗️ Architecture & Technical Innovations
-
-### 1. Hybrid Dual-Tier Translation Engine
-- **Tier 1 (Instant Database Match - 0ms):** Frequently used school & FLN sentences (*"आज हम गिनती सीखेंगे"*, *"पानी लाओ"*, *"नमस्ते"*) are matched against a local SQLite database for 0ms response time and 0MB memory overhead.
-- **Tier 2 (Optimized ONNX Neural Engine - ~1.5s):** Custom inputs trigger an optimized M2M100 INT8 transformer engine running on 4 CPU cores (`setIntraOpNumThreads(4)`), utilizing zero-copy direct `FloatBuffer` processing to eliminate JNI memory leaks.
-
-### 2. On-Device Speech & Audio Pipeline
-- **ASR:** Offline Hindi speech recognition via Vosk / IndicConformer.
-- **TTS:** Dual-script text-to-speech engine using native Android speech synthesis with Ol Chiki → Devanagari transliteration mapping.
+### 💻 Option 2: Run from Source (For Developers in Android Studio)
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Shreyash-392/PALASH.git
+   ```
+2. Open **Android Studio** → select `Open` → select the `android_app` folder.
+3. Connect your Android phone via USB (with **USB Debugging** enabled).
+4. Click **Run ▶️** (`Shift + F10`) to compile and launch.
 
 ---
 
