@@ -1,0 +1,223 @@
+{
+  "inspection": {
+    "checkpoint_path": "d:\\Antigravity\\ML_train\\MundariTranslation\\saved_models\\best_model",
+    "vocab_size": 128105,
+    "model_embedding_size": 128105,
+    "vocab_match": true,
+    "unr_token_preserved": true,
+    "dynamic_unr_token_id": 128104,
+    "dynamic_hi_token_id": 128036
+  },
+  "copied_tokenizer_files": [
+    "vocab.json",
+    "sentencepiece.bpe.model",
+    "special_tokens_map.json",
+    "tokenizer_config.json",
+    "added_tokens.json",
+    "config.json",
+    "generation_config.json"
+  ],
+  "export_status": {
+    "success": false,
+    "exported_files": [],
+    "error_message": "output with shape [1, 16, 1, 1] doesn't match the broadcast shape [1, 16, 1, 16]",
+    "quantization": "NONE"
+  },
+  "benchmark": {
+    "original_checkpoint_size_mb": 1851.97,
+    "exported_folder_size_mb": 1087.22,
+    "size_reduction_percentage": 41.29,
+    "pytorch_avg_latency_ms": 359.37,
+    "onnx_avg_latency_ms": "N/A",
+    "ram_usage_mb": 333.75,
+    "total_process_ram_mb": 1028.77,
+    "quality_verification": {
+      "empty_output_count": 0,
+      "unk_token_count": 0,
+      "severe_repetition_count": 0,
+      "unr_token_handling_correct": true
+    },
+    "hindi_to_mundari_samples": [
+      {
+        "index": 1,
+        "source_hindi": "मैं आधे अधूरे पेट उठा तो दूसरी समस्या शुरू।",
+        "reference_mundari": "आञ तारा पेरेः लाइः बिरिदकेनाञ दो एटाः बालाए एटेः।",
+        "pytorch_prediction": "आञ आधा अधुरे पेट उड़ुः दो बालाएः।",
+        "raw_prediction": "</s> __unr__ आञ आधा अधुरे पेट उड़ुः दो बालाएः।</s>",
+        "latency_ms": 594.78
+      },
+      {
+        "index": 2,
+        "source_hindi": "लालू और मुलायम से बात की जा रही है।",
+        "reference_mundari": "लालू आर मुलायम लोः जागार होबाओताना।",
+        "pytorch_prediction": "लालू आर मुलायम ते जापाःआ।",
+        "raw_prediction": "</s> __unr__ लालू आर मुलायम ते जापाःआ।</s>",
+        "latency_ms": 236.36
+      },
+      {
+        "index": 3,
+        "source_hindi": "यूपी इलेक्शन वॉच की सूचना के मुताबिक उत्तर प्रदेश विधान",
+        "reference_mundari": "यूपी इलेक्शन वॉच राः उनुदुब होरा ते उत्तर प्रदेश विधान",
+        "pytorch_prediction": "यूपी इलेक्शन वॉच राः सूचना राः उत्तर प्रदेश विधेयक",
+        "raw_prediction": "</s> __unr__ यूपी इलेक्शन वॉच राः सूचना राः उत्तर प्रदेश विधेयक</s>",
+        "latency_ms": 319.52
+      },
+      {
+        "index": 4,
+        "source_hindi": "और इस मामले में उनकी भूमिका अग्रणी थी।",
+        "reference_mundari": "आर नेआ मामला रे इनिः रिकातानको रे आयार गे ताइकेनाएः।",
+        "pytorch_prediction": "आर नेआ मामला रे इनिआः भूमिका अग्रणी ताइकेना।",
+        "raw_prediction": "</s> __unr__ आर नेआ मामला रे इनिआः भूमिका अग्रणी ताइकेना।</s>",
+        "latency_ms": 339.54
+      },
+      {
+        "index": 5,
+        "source_hindi": "क्यों मीण्डी बुआ को परेशान करता है जोगिया।",
+        "reference_mundari": "चानाः मेनते मिण्डि हातोमेः बालाएइआः जोगिआ।",
+        "pytorch_prediction": "चिआः चिआः मिन्डी बूआ बालाएआः जोगिया।",
+        "raw_prediction": "</s> __unr__ चिआः चिआः मिन्डी बूआ बालाएआः जोगिया।</s>",
+        "latency_ms": 387.34
+      },
+      {
+        "index": 6,
+        "source_hindi": "कौन सुरभि की दिव्य बेलि प्राणॉ मॅ गमक उठी है?",
+        "reference_mundari": "ओकोएः सुरभि राः दिव्य बेलि प्राणॉ मॉ सोआन एटेःआकान?",
+        "pytorch_prediction": "ओकोआः सुरभि राः राः राः राः बेलि आउः आउः गमक उड़ुःआ?",
+        "raw_prediction": "</s> __unr__ ओकोआः सुरभि राः राः राः राः बेलि आउः आउः गमक उड़ुःआ?</s>",
+        "latency_ms": 545.61
+      },
+      {
+        "index": 7,
+        "source_hindi": "हमारी अकेले दम पर उतरने की योजना नहीं है।",
+        "reference_mundari": "आलेआः एसेकार गे हाड़ागुन राः योजना बानोः।",
+        "pytorch_prediction": "आञाः अकेले दम रे उतारोः राः योजना काएः।",
+        "raw_prediction": "</s> __unr__ आञाः अकेले दम रे उतारोः राः योजना काएः।</s>",
+        "latency_ms": 381.81
+      },
+      {
+        "index": 8,
+        "source_hindi": "तब से महाराणा की सेवा में रहने लगे।",
+        "reference_mundari": "एन सोमाए ते महाराणाआः सेवा रे ताइन एटेःजानाएः।",
+        "pytorch_prediction": "एनताः ते महाराणा राः सेवा रे बाइजाना।",
+        "raw_prediction": "</s> __unr__ एनताः ते महाराणा राः सेवा रे बाइजाना।</s>",
+        "latency_ms": 282.37
+      },
+      {
+        "index": 9,
+        "source_hindi": "चंदेरी के बाद कदवाया में कार्य चल रहा है।",
+        "reference_mundari": "चंदेरी तायोम ते कदवाया रे कामि सेसेनताना।",
+        "pytorch_prediction": "चंदेरी नाआः कादवाया रे कामि होबाओआ।",
+        "raw_prediction": "</s> __unr__ चंदेरी नाआः कादवाया रे कामि होबाओआ।</s>",
+        "latency_ms": 365.78
+      },
+      {
+        "index": 10,
+        "source_hindi": "भाजपा पर गलतबयानी का आरोप लगाते हुए उन्होंने कहा कि",
+        "reference_mundari": "भाजपा चेतान रे होसोड़ोकाजि राः आरोम लागाओतान लोः इनिः काजिकेदाएः।",
+        "pytorch_prediction": "भाजपा रे हासाबियानी राः आरोप लगाएः इनिः काजिओःआ।",
+        "raw_prediction": "</s> __unr__ भाजपा रे हासाबियानी राः आरोप लगाएः इनिः काजिओःआ।</s>",
+        "latency_ms": 443.12
+      }
+    ],
+    "mundari_to_hindi_samples": [
+      {
+        "index": 1,
+        "source_mundari": "आञ तारा पेरेः लाइः बिरिदकेनाञ दो एटाः बालाए एटेः।",
+        "reference_hindi": "मैं आधे अधूरे पेट उठा तो दूसरी समस्या शुरू।",
+        "pytorch_prediction": "मैंने अपनी तारीख को भी छोड़ दिया था और दूसरे को बाधाएं थीं।",
+        "raw_prediction": "</s> __hi__ मैंने अपनी तारीख को भी छोड़ दिया था और दूसरे को बाधाएं थीं।</s>",
+        "latency_ms": 393.68
+      },
+      {
+        "index": 2,
+        "source_mundari": "लालू आर मुलायम लोः जागार होबाओताना।",
+        "reference_hindi": "लालू और मुलायम से बात की जा रही है।",
+        "pytorch_prediction": "लालू और मुलायम के साथ बातचीत हो रही है।",
+        "raw_prediction": "</s> __hi__ लालू और मुलायम के साथ बातचीत हो रही है।</s>",
+        "latency_ms": 319.35
+      },
+      {
+        "index": 3,
+        "source_mundari": "यूपी इलेक्शन वॉच राः उनुदुब होरा ते उत्तर प्रदेश विधान",
+        "reference_hindi": "यूपी इलेक्शन वॉच की सूचना के मुताबिक उत्तर प्रदेश विधान",
+        "pytorch_prediction": "यूपी इलेक्शन घड़ी की उनुदुब घड़ी से उत्तर प्रदेश विधेयक",
+        "raw_prediction": "</s> __hi__ यूपी इलेक्शन घड़ी की उनुदुब घड़ी से उत्तर प्रदेश विधेयक</s>",
+        "latency_ms": 368.34
+      },
+      {
+        "index": 4,
+        "source_mundari": "आर नेआ मामला रे इनिः रिकातानको रे आयार गे ताइकेनाएः।",
+        "reference_hindi": "और इस मामले में उनकी भूमिका अग्रणी थी।",
+        "pytorch_prediction": "और इस मामले में उनके कार्यों में अब ही था।",
+        "raw_prediction": "</s> __hi__ और इस मामले में उनके कार्यों में अब ही था।</s>",
+        "latency_ms": 248.61
+      },
+      {
+        "index": 5,
+        "source_mundari": "चानाः मेनते मिण्डि हातोमेः बालाएइआः जोगिआ।",
+        "reference_hindi": "क्यों मीण्डी बुआ को परेशान करता है जोगिया।",
+        "pytorch_prediction": "क्यों मिंडि की समस्या को बाधित कर रही है?",
+        "raw_prediction": "</s> __hi__ क्यों मिंडि की समस्या को बाधित कर रही है?</s>",
+        "latency_ms": 356.39
+      },
+      {
+        "index": 6,
+        "source_mundari": "ओकोएः सुरभि राः दिव्य बेलि प्राणॉ मॉ सोआन एटेःआकान?",
+        "reference_hindi": "कौन सुरभि की दिव्य बेलि प्राणॉ मॅ गमक उठी है?",
+        "pytorch_prediction": "कौन से सुरभि की देवी बेलि प्राणियों को सच नहीं कर सकता?",
+        "raw_prediction": "</s> __hi__ कौन से सुरभि की देवी बेलि प्राणियों को सच नहीं कर सकता?</s>",
+        "latency_ms": 544.57
+      },
+      {
+        "index": 7,
+        "source_mundari": "आलेआः एसेकार गे हाड़ागुन राः योजना बानोः।",
+        "reference_hindi": "हमारी अकेले दम पर उतरने की योजना नहीं है।",
+        "pytorch_prediction": "हमारे एसेकार ही हाड़ागुना की योजना के साथ नहीं हैं।",
+        "raw_prediction": "</s> __hi__ हमारे एसेकार ही हाड़ागुना की योजना के साथ नहीं हैं।</s>",
+        "latency_ms": 292.92
+      },
+      {
+        "index": 8,
+        "source_mundari": "एन सोमाए ते महाराणाआः सेवा रे ताइन एटेःजानाएः।",
+        "reference_hindi": "तब से महाराणा की सेवा में रहने लगे।",
+        "pytorch_prediction": "तब से महाराणा की सेवा में रहते थे।",
+        "raw_prediction": "</s> __hi__ तब से महाराणा की सेवा में रहते थे।</s>",
+        "latency_ms": 212.14
+      },
+      {
+        "index": 9,
+        "source_mundari": "चंदेरी तायोम ते कदवाया रे कामि सेसेनताना।",
+        "reference_hindi": "चंदेरी के बाद कदवाया में कार्य चल रहा है।",
+        "pytorch_prediction": "चंदेरी के समय से कदवाया में काम चल रहा है।",
+        "raw_prediction": "</s> __hi__ चंदेरी के समय से कदवाया में काम चल रहा है।</s>",
+        "latency_ms": 311.93
+      },
+      {
+        "index": 10,
+        "source_mundari": "भाजपा चेतान रे होसोड़ोकाजि राः आरोम लागाओतान लोः इनिः काजिकेदाएः।",
+        "reference_hindi": "भाजपा पर गलतबयानी का आरोप लगाते हुए उन्होंने कहा कि",
+        "pytorch_prediction": "भाजपा ने चेतान में आरोप लगाने के लिए कहा था।",
+        "raw_prediction": "</s> __hi__ भाजपा ने चेतान में आरोप लगाने के लिए कहा था।</s>",
+        "latency_ms": 243.27
+      }
+    ]
+  },
+  "android_integration_guidelines": {
+    "target_framework": "ONNX Runtime Mobile (Android)",
+    "dependency": "com.microsoft.onnxruntime:onnxruntime-android:1.18.0",
+    "vocabulary_asset": "vocab.json & sentencepiece.bpe.model",
+    "special_tokens": {
+      "mundari_target_token": "__unr__",
+      "mundari_target_token_id": 128104,
+      "hindi_target_token": "__hi__",
+      "hindi_target_token_id": 128036
+    },
+    "recommended_android_next_steps": [
+      "Copy exported ONNX graphs and tokenizer assets to PALASH-VoiceBridge `app/src/main/assets/nmt/`.",
+      "Add `com.microsoft.onnxruntime:onnxruntime-android` dependency to build.gradle.kts.",
+      "Implement SentencePiece Tokenizer Java/C++ wrapper for text encoding/decoding.",
+      "Instantiate ORTEnvironment & ORTSession for encoder_model.onnx and decoder_model.onnx.",
+      "Perform greedy beam decoding in Kotlin/Java passing forced_bos_token_id dynamically."
+    ]
+  }
+}

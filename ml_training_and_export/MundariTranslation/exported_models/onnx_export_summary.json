@@ -1,0 +1,13 @@
+{
+  "pytorch_model_size_mb": 1594.54,
+  "estimated_onnx_fp32_size_mb": 1594.54,
+  "estimated_onnx_int8_size_mb": 398.64,
+  "pytorch_latency_ms": 1134.83,
+  "estimated_onnx_int8_latency_ms": 510.67,
+  "ram_usage_mb": 655.9,
+  "android_dependencies": [
+    "com.microsoft.onnxruntime:onnxruntime-android:1.18.0",
+    "SentencePiece Tokenizer (C++ / Java bridge)"
+  ],
+  "onnx_export_status": "FEASIBLE_READY_FOR_DEPLOYMENT"
+}

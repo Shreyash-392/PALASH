@@ -1,0 +1,51 @@
+# ==========================================
+# 🛑 DATASETS & LARGE ML FILES (DO NOT PUSH)
+# ==========================================
+*.tsv
+*.csv
+*.jsonl
+*.parquet
+dataset/
+datasets/
+data/
+raw_data/
+
+# ==========================================
+# 🤖 HEAVY ML MODELS & CHECKPOINTS (>100MB)
+# ==========================================
+*.onnx
+*.pth
+*.bin
+*.pt
+*.safetensors
+checkpoint-*/
+wandb/
+model_cache/
+
+# ==========================================
+# 📱 ANDROID STUDIO & GRADLE BUILD
+# ==========================================
+.gradle/
+build/
+app/build/
+*.apk
+*.aar
+.idea/
+*.iml
+local.properties
+
+# ==========================================
+# 🐍 PYTHON ENVIRONMENT & CACHE
+# ==========================================
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+*.log
+
+# ==========================================
+# 💻 OS GENERATED FILES
+# ==========================================
+.DS_Store
+Thumbs.db

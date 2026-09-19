@@ -1,0 +1,179 @@
+========================================================================
+OPTIMUM ONNX + INT8 EXPORT REPORT: M2M100 HINDI <-> MUNDARI NMT
+========================================================================
+
+1. CHECKPOINT & TOKENIZER INSPECTION
+   Source Checkpoint: d:\Antigravity\ML_train\MundariTranslation\saved_models\best_model
+   Vocab Size: 128105
+   '__unr__' Token Preserved: True (ID: 128104)
+   '__hi__' Token Preserved:  True (ID: 128036)
+
+2. EXPORT STATUS
+   Optimum ONNX Export Success: True
+   INT8 Quantization Success:   True
+   Exported ONNX Files: decoder_model.onnx, decoder_with_past_model.onnx, encoder_model-inferred.onnx, encoder_model.onnx
+
+3. MEASURED FILE SIZES & LATENCY BENCHMARK (20 Test Sentences)
+   Original PyTorch Checkpoint Size: 1851.97 MB
+   ONNX FP32 Folder Size:            5620.38 MB (Reduction: -203.48%)
+   ONNX INT8 Folder Size:            1151.25 MB (Reduction: 37.84%)
+   PyTorch CPU Avg Latency:          1347.42 ms / sentence
+   ONNX FP32 Avg Latency:            2032.81 ms / sentence
+   ONNX INT8 Avg Latency:            1868.18 ms / sentence
+   RAM Usage:                        615.88 MB
+
+4. QUALITY & PARITY VERIFICATION
+   Empty Outputs:       0
+   <unk> Tokens:        0
+   Severe Repetitions:  0
+   '__unr__' Handling:  VERIFIED CORRECT
+   '__hi__' Handling:   VERIFIED CORRECT
+
+5. HINDI -> MUNDARI SAMPLES (10 Sentences)
+Example 1
+  HINDI SRC:   मैं आधे अधूरे पेट उठा तो दूसरी समस्या शुरू।
+  MUNDARI REF: आञ तारा पेरेः लाइः बिरिदकेनाञ दो एटाः बालाए एटेः।
+  PYTORCH:     आञ आधा अधुरे पेट उड़ुः दो बालाएः। (2430.75 ms)
+  ONNX FP32:   आञ आधा अधुरे पेट उड़ुः दो बालाएः। (1878.29 ms) | Match: True
+  ONNX INT8:   आञ आधा अधुरे पेट उतारोः दो बालाएः बालाएः। (1355.89 ms) | Match: False
+
+Example 2
+  HINDI SRC:   लालू और मुलायम से बात की जा रही है।
+  MUNDARI REF: लालू आर मुलायम लोः जागार होबाओताना।
+  PYTORCH:     लालू आर मुलायम ते जापाःआ। (937.78 ms)
+  ONNX FP32:   लालू आर मुलायम ते जापाःआ। (1731.76 ms) | Match: True
+  ONNX INT8:   लालू आर मुलायम ते जापाःआ। (1827.06 ms) | Match: True
+
+Example 3
+  HINDI SRC:   यूपी इलेक्शन वॉच की सूचना के मुताबिक उत्तर प्रदेश विधान
+  MUNDARI REF: यूपी इलेक्शन वॉच राः उनुदुब होरा ते उत्तर प्रदेश विधान
+  PYTORCH:     यूपी इलेक्शन वॉच राः सूचना राः उत्तर प्रदेश विधेयक (1299.5 ms)
+  ONNX FP32:   यूपी इलेक्शन वॉच राः सूचना राः उत्तर प्रदेश विधेयक (1846.01 ms) | Match: True
+  ONNX INT8:   यूपी इलेक्शन घड़ुः राः सूचना राः उत्तर प्रदेश विधेयक (1274.97 ms) | Match: False
+
+Example 4
+  HINDI SRC:   और इस मामले में उनकी भूमिका अग्रणी थी।
+  MUNDARI REF: आर नेआ मामला रे इनिः रिकातानको रे आयार गे ताइकेनाएः।
+  PYTORCH:     आर नेआ मामला रे इनिआः भूमिका अग्रणी ताइकेना। (1309.3 ms)
+  ONNX FP32:   आर नेआ मामला रे इनिआः भूमिका अग्रणी ताइकेना। (1850.15 ms) | Match: True
+  ONNX INT8:   आर नेआ मामला रे इनिआः भूमिका अग्रणी ताइकेना। (1333.72 ms) | Match: True
+
+Example 5
+  HINDI SRC:   क्यों मीण्डी बुआ को परेशान करता है जोगिया।
+  MUNDARI REF: चानाः मेनते मिण्डि हातोमेः बालाएइआः जोगिआ।
+  PYTORCH:     चिआः चिआः मिन्डी बूआ बालाएआः जोगिया। (1476.61 ms)
+  ONNX FP32:   चिआः चिआः मिन्डी बूआ बालाएआः जोगिया। (2217.66 ms) | Match: True
+  ONNX INT8:   चिआः चिआः मिण्डी बूआ बालाएः जोगिया। (1157.39 ms) | Match: False
+
+Example 6
+  HINDI SRC:   कौन सुरभि की दिव्य बेलि प्राणॉ मॅ गमक उठी है?
+  MUNDARI REF: ओकोएः सुरभि राः दिव्य बेलि प्राणॉ मॉ सोआन एटेःआकान?
+  PYTORCH:     ओकोआः सुरभि राः राः राः राः बेलि आउः आउः गमक उड़ुःआ? (2104.78 ms)
+  ONNX FP32:   ओकोआः सुरभि राः राः राः राः बेलि आउः आउः गमक उड़ुःआ? (2788.0 ms) | Match: True
+  ONNX INT8:   ओकोआः सुरभि राः राः राः राः बेलि राः आउः गमक उड़ुःआ? (5315.54 ms) | Match: False
+
+Example 7
+  HINDI SRC:   हमारी अकेले दम पर उतरने की योजना नहीं है।
+  MUNDARI REF: आलेआः एसेकार गे हाड़ागुन राः योजना बानोः।
+  PYTORCH:     आञाः अकेले दम रे उतारोः राः योजना काएः। (1518.65 ms)
+  ONNX FP32:   आञाः अकेले दम रे उतारोः राः योजना काएः। (2150.77 ms) | Match: True
+  ONNX INT8:   आञाः अकेले दम रे उतारोः राः योजना काएः। (2921.77 ms) | Match: True
+
+Example 8
+  HINDI SRC:   तब से महाराणा की सेवा में रहने लगे।
+  MUNDARI REF: एन सोमाए ते महाराणाआः सेवा रे ताइन एटेःजानाएः।
+  PYTORCH:     एनताः ते महाराणा राः सेवा रे बाइजाना। (1101.35 ms)
+  ONNX FP32:   एनताः ते महाराणा राः सेवा रे बाइजाना। (1889.27 ms) | Match: True
+  ONNX INT8:   एनताः ते महाराणा राः सेवा रे बाइजाना। (1156.19 ms) | Match: True
+
+Example 9
+  HINDI SRC:   चंदेरी के बाद कदवाया में कार्य चल रहा है।
+  MUNDARI REF: चंदेरी तायोम ते कदवाया रे कामि सेसेनताना।
+  PYTORCH:     चंदेरी नाआः कादवाया रे कामि होबाओआ। (1356.28 ms)
+  ONNX FP32:   चंदेरी नाआः कादवाया रे कामि होबाओआ। (2417.4 ms) | Match: True
+  ONNX INT8:   चंदेरी नाआः कादवाया रे कामि होबाओआ। (1371.68 ms) | Match: True
+
+Example 10
+  HINDI SRC:   भाजपा पर गलतबयानी का आरोप लगाते हुए उन्होंने कहा कि
+  MUNDARI REF: भाजपा चेतान रे होसोड़ोकाजि राः आरोम लागाओतान लोः इनिः काजिकेदाएः।
+  PYTORCH:     भाजपा रे हासाबियानी राः आरोप लगाएः इनिः काजिओःआ। (1580.82 ms)
+  ONNX FP32:   भाजपा रे हासाबियानी राः आरोप लगाएः इनिः काजिओःआ। (2343.54 ms) | Match: True
+  ONNX INT8:   भाजपा रे हासाबियानी राः आरोप लगाएः इनिः काजिओःआ। (2883.17 ms) | Match: True
+
+6. MUNDARI -> HINDI SAMPLES (10 Sentences)
+Example 1
+  MUNDARI SRC: आञ तारा पेरेः लाइः बिरिदकेनाञ दो एटाः बालाए एटेः।
+  HINDI REF:   मैं आधे अधूरे पेट उठा तो दूसरी समस्या शुरू।
+  PYTORCH:     मैंने अपनी तारीख को भी छोड़ दिया था और दूसरे को बाधाएं थीं। (1399.24 ms)
+  ONNX FP32:   मैंने अपनी तारीख को भी छोड़ दिया था और दूसरे को बाधाएं थीं। (2081.56 ms) | Match: True
+  ONNX INT8:   मैंने अपनी पहली बार की यात्रा की थी तो दूसरे बाधाओं में। (5025.29 ms) | Match: False
+
+Example 2
+  MUNDARI SRC: लालू आर मुलायम लोः जागार होबाओताना।
+  HINDI REF:   लालू और मुलायम से बात की जा रही है।
+  PYTORCH:     लालू और मुलायम के साथ बातचीत हो रही है। (1174.29 ms)
+  ONNX FP32:   लालू और मुलायम के साथ बातचीत हो रही है। (1846.58 ms) | Match: True
+  ONNX INT8:   लालू और मुलायम के साथ बातचीत हो रही है। (1931.98 ms) | Match: True
+
+Example 3
+  MUNDARI SRC: यूपी इलेक्शन वॉच राः उनुदुब होरा ते उत्तर प्रदेश विधान
+  HINDI REF:   यूपी इलेक्शन वॉच की सूचना के मुताबिक उत्तर प्रदेश विधान
+  PYTORCH:     यूपी इलेक्शन घड़ी की उनुदुब घड़ी से उत्तर प्रदेश विधेयक (1395.06 ms)
+  ONNX FP32:   यूपी इलेक्शन घड़ी की उनुदुब घड़ी से उत्तर प्रदेश विधेयक (2247.4 ms) | Match: True
+  ONNX INT8:   यूपी इलेक्शन घड़ी की उनुदुब घड़ी से उत्तर प्रदेश विधेयक (1192.06 ms) | Match: True
+
+Example 4
+  MUNDARI SRC: आर नेआ मामला रे इनिः रिकातानको रे आयार गे ताइकेनाएः।
+  HINDI REF:   और इस मामले में उनकी भूमिका अग्रणी थी।
+  PYTORCH:     और इस मामले में उनके कार्यों में अब ही था। (979.1 ms)
+  ONNX FP32:   और इस मामले में उनके कार्यों में अब ही था। (1655.01 ms) | Match: True
+  ONNX INT8:   और इस मामले में उनके कार्यों में अब ही था। (1325.87 ms) | Match: True
+
+Example 5
+  MUNDARI SRC: चानाः मेनते मिण्डि हातोमेः बालाएइआः जोगिआ।
+  HINDI REF:   क्यों मीण्डी बुआ को परेशान करता है जोगिया।
+  PYTORCH:     क्यों मिंडि की समस्या को बाधित कर रही है? (1075.46 ms)
+  ONNX FP32:   क्यों मिंडि की समस्या को बाधित कर रही है? (1910.25 ms) | Match: True
+  ONNX INT8:   क्यों मिंडि की समस्या को बाधित कर रहा है? (1314.85 ms) | Match: False
+
+Example 6
+  MUNDARI SRC: ओकोएः सुरभि राः दिव्य बेलि प्राणॉ मॉ सोआन एटेःआकान?
+  HINDI REF:   कौन सुरभि की दिव्य बेलि प्राणॉ मॅ गमक उठी है?
+  PYTORCH:     कौन से सुरभि की देवी बेलि प्राणियों को सच नहीं कर सकता? (1470.56 ms)
+  ONNX FP32:   कौन से सुरभि की देवी बेलि प्राणियों को सच नहीं कर सकता? (2337.35 ms) | Match: True
+  ONNX INT8:   कौन से सुरभि की देवी बेलि प्राणियों को अजीब लग रहा है? (1378.4 ms) | Match: False
+
+Example 7
+  MUNDARI SRC: आलेआः एसेकार गे हाड़ागुन राः योजना बानोः।
+  HINDI REF:   हमारी अकेले दम पर उतरने की योजना नहीं है।
+  PYTORCH:     हमारे एसेकार ही हाड़ागुना की योजना के साथ नहीं हैं। (1202.62 ms)
+  ONNX FP32:   हमारे एसेकार ही हाड़ागुना की योजना के साथ नहीं हैं। (1956.14 ms) | Match: True
+  ONNX INT8:   हमारे एसेकार ही हाड़ागुना की योजना के बिना हैं। (1131.5 ms) | Match: False
+
+Example 8
+  MUNDARI SRC: एन सोमाए ते महाराणाआः सेवा रे ताइन एटेःजानाएः।
+  HINDI REF:   तब से महाराणा की सेवा में रहने लगे।
+  PYTORCH:     तब से महाराणा की सेवा में रहते थे। (911.02 ms)
+  ONNX FP32:   तब से महाराणा की सेवा में रहते थे। (1717.32 ms) | Match: True
+  ONNX INT8:   तब से महाराणा की सेवा में रहती है। (1047.42 ms) | Match: False
+
+Example 9
+  MUNDARI SRC: चंदेरी तायोम ते कदवाया रे कामि सेसेनताना।
+  HINDI REF:   चंदेरी के बाद कदवाया में कार्य चल रहा है।
+  PYTORCH:     चंदेरी के समय से कदवाया में काम चल रहा है। (1235.45 ms)
+  ONNX FP32:   चंदेरी के समय से कदवाया में काम चल रहा है। (2002.65 ms) | Match: True
+  ONNX INT8:   चंदेरी के समय से कदवाया में काम चल रहा है। (1242.59 ms) | Match: True
+
+Example 10
+  MUNDARI SRC: भाजपा चेतान रे होसोड़ोकाजि राः आरोम लागाओतान लोः इनिः काजिकेदाएः।
+  HINDI REF:   भाजपा पर गलतबयानी का आरोप लगाते हुए उन्होंने कहा कि
+  PYTORCH:     भाजपा ने चेतान में आरोप लगाने के लिए कहा था। (989.67 ms)
+  ONNX FP32:   भाजपा ने चेतान में आरोप लगाने के लिए कहा था। (1789.02 ms) | Match: True
+  ONNX INT8:   भाजपा ने चेतान में भीड़ के आरोप लगाए थे। (1176.21 ms) | Match: False
+
+7. RECOMMENDED NEXT STEPS FOR PALASH-VOICEBRIDGE ANDROID APP
+   - Copy exported ONNX graphs (encoder_model.onnx, decoder_model.onnx, decoder_with_past_model.onnx) and vocabulary assets to PALASH-VoiceBridge `app/src/main/assets/nmt/`.
+   - Add `com.microsoft.onnxruntime:onnxruntime-android:1.18.0` dependency to build.gradle.kts.
+   - Implement SentencePiece Tokenizer Kotlin/Java wrapper for encoding/decoding.
+   - Instantiate ORTSession for encoder and decoder ONNX graphs.
+   - Perform greedy beam decoding in Kotlin/Java passing forced_bos_token_id dynamically.

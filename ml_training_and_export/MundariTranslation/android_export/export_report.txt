@@ -1,0 +1,139 @@
+========================================================================
+M2M100 418M HINDI <-> MUNDARI NMT: ANDROID MODEL EXPORT REPORT
+========================================================================
+
+1. CHECKPOINT & TOKENIZER INSPECTION
+   Source Checkpoint: d:\Antigravity\ML_train\MundariTranslation\saved_models\best_model
+   Vocab Size: 128105
+   '__unr__' Token Preserved: True
+   Dynamic '__unr__' Token ID: 128104
+   Dynamic '__hi__' Token ID:  128036
+
+2. EXPORT STATUS
+   ONNX Export Success: False
+   Quantization Scheme: NONE
+   Exported Files: None
+   ONNX Export Note: output with shape [1, 16, 1, 1] doesn't match the broadcast shape [1, 16, 1, 16]
+
+3. MODEL SIZE & LATENCY BENCHMARK (20 Test Sentences)
+   Original PyTorch Model Size: 1851.97 MB
+   Exported Folder Size:        1087.22 MB
+   Size Reduction:              41.29%
+   PyTorch CPU Latency:         359.37 ms / sentence
+   ONNX Latency:                N/A ms / sentence
+   RAM Usage:                   1028.77 MB
+
+4. QUALITY & PARITY VERIFICATION
+   Empty Outputs:        0
+   <unk> Tokens:         0
+   Severe Repetitions:   0
+   '__unr__' Handling:   VERIFIED CORRECT
+
+5. HINDI -> MUNDARI SAMPLE TRANSLATIONS (10 Sentences)
+Example 1
+  HINDI SRC:   मैं आधे अधूरे पेट उठा तो दूसरी समस्या शुरू।
+  MUNDARI REF: आञ तारा पेरेः लाइः बिरिदकेनाञ दो एटाः बालाए एटेः।
+  MODEL PRED:  आञ आधा अधुरे पेट उड़ुः दो बालाएः।
+
+Example 2
+  HINDI SRC:   लालू और मुलायम से बात की जा रही है।
+  MUNDARI REF: लालू आर मुलायम लोः जागार होबाओताना।
+  MODEL PRED:  लालू आर मुलायम ते जापाःआ।
+
+Example 3
+  HINDI SRC:   यूपी इलेक्शन वॉच की सूचना के मुताबिक उत्तर प्रदेश विधान
+  MUNDARI REF: यूपी इलेक्शन वॉच राः उनुदुब होरा ते उत्तर प्रदेश विधान
+  MODEL PRED:  यूपी इलेक्शन वॉच राः सूचना राः उत्तर प्रदेश विधेयक
+
+Example 4
+  HINDI SRC:   और इस मामले में उनकी भूमिका अग्रणी थी।
+  MUNDARI REF: आर नेआ मामला रे इनिः रिकातानको रे आयार गे ताइकेनाएः।
+  MODEL PRED:  आर नेआ मामला रे इनिआः भूमिका अग्रणी ताइकेना।
+
+Example 5
+  HINDI SRC:   क्यों मीण्डी बुआ को परेशान करता है जोगिया।
+  MUNDARI REF: चानाः मेनते मिण्डि हातोमेः बालाएइआः जोगिआ।
+  MODEL PRED:  चिआः चिआः मिन्डी बूआ बालाएआः जोगिया।
+
+Example 6
+  HINDI SRC:   कौन सुरभि की दिव्य बेलि प्राणॉ मॅ गमक उठी है?
+  MUNDARI REF: ओकोएः सुरभि राः दिव्य बेलि प्राणॉ मॉ सोआन एटेःआकान?
+  MODEL PRED:  ओकोआः सुरभि राः राः राः राः बेलि आउः आउः गमक उड़ुःआ?
+
+Example 7
+  HINDI SRC:   हमारी अकेले दम पर उतरने की योजना नहीं है।
+  MUNDARI REF: आलेआः एसेकार गे हाड़ागुन राः योजना बानोः।
+  MODEL PRED:  आञाः अकेले दम रे उतारोः राः योजना काएः।
+
+Example 8
+  HINDI SRC:   तब से महाराणा की सेवा में रहने लगे।
+  MUNDARI REF: एन सोमाए ते महाराणाआः सेवा रे ताइन एटेःजानाएः।
+  MODEL PRED:  एनताः ते महाराणा राः सेवा रे बाइजाना।
+
+Example 9
+  HINDI SRC:   चंदेरी के बाद कदवाया में कार्य चल रहा है।
+  MUNDARI REF: चंदेरी तायोम ते कदवाया रे कामि सेसेनताना।
+  MODEL PRED:  चंदेरी नाआः कादवाया रे कामि होबाओआ।
+
+Example 10
+  HINDI SRC:   भाजपा पर गलतबयानी का आरोप लगाते हुए उन्होंने कहा कि
+  MUNDARI REF: भाजपा चेतान रे होसोड़ोकाजि राः आरोम लागाओतान लोः इनिः काजिकेदाएः।
+  MODEL PRED:  भाजपा रे हासाबियानी राः आरोप लगाएः इनिः काजिओःआ।
+
+6. MUNDARI -> HINDI SAMPLE TRANSLATIONS (10 Sentences)
+Example 1
+  MUNDARI SRC: आञ तारा पेरेः लाइः बिरिदकेनाञ दो एटाः बालाए एटेः।
+  HINDI REF:   मैं आधे अधूरे पेट उठा तो दूसरी समस्या शुरू।
+  MODEL PRED:  मैंने अपनी तारीख को भी छोड़ दिया था और दूसरे को बाधाएं थीं।
+
+Example 2
+  MUNDARI SRC: लालू आर मुलायम लोः जागार होबाओताना।
+  HINDI REF:   लालू और मुलायम से बात की जा रही है।
+  MODEL PRED:  लालू और मुलायम के साथ बातचीत हो रही है।
+
+Example 3
+  MUNDARI SRC: यूपी इलेक्शन वॉच राः उनुदुब होरा ते उत्तर प्रदेश विधान
+  HINDI REF:   यूपी इलेक्शन वॉच की सूचना के मुताबिक उत्तर प्रदेश विधान
+  MODEL PRED:  यूपी इलेक्शन घड़ी की उनुदुब घड़ी से उत्तर प्रदेश विधेयक
+
+Example 4
+  MUNDARI SRC: आर नेआ मामला रे इनिः रिकातानको रे आयार गे ताइकेनाएः।
+  HINDI REF:   और इस मामले में उनकी भूमिका अग्रणी थी।
+  MODEL PRED:  और इस मामले में उनके कार्यों में अब ही था।
+
+Example 5
+  MUNDARI SRC: चानाः मेनते मिण्डि हातोमेः बालाएइआः जोगिआ।
+  HINDI REF:   क्यों मीण्डी बुआ को परेशान करता है जोगिया।
+  MODEL PRED:  क्यों मिंडि की समस्या को बाधित कर रही है?
+
+Example 6
+  MUNDARI SRC: ओकोएः सुरभि राः दिव्य बेलि प्राणॉ मॉ सोआन एटेःआकान?
+  HINDI REF:   कौन सुरभि की दिव्य बेलि प्राणॉ मॅ गमक उठी है?
+  MODEL PRED:  कौन से सुरभि की देवी बेलि प्राणियों को सच नहीं कर सकता?
+
+Example 7
+  MUNDARI SRC: आलेआः एसेकार गे हाड़ागुन राः योजना बानोः।
+  HINDI REF:   हमारी अकेले दम पर उतरने की योजना नहीं है।
+  MODEL PRED:  हमारे एसेकार ही हाड़ागुना की योजना के साथ नहीं हैं।
+
+Example 8
+  MUNDARI SRC: एन सोमाए ते महाराणाआः सेवा रे ताइन एटेःजानाएः।
+  HINDI REF:   तब से महाराणा की सेवा में रहने लगे।
+  MODEL PRED:  तब से महाराणा की सेवा में रहते थे।
+
+Example 9
+  MUNDARI SRC: चंदेरी तायोम ते कदवाया रे कामि सेसेनताना।
+  HINDI REF:   चंदेरी के बाद कदवाया में कार्य चल रहा है।
+  MODEL PRED:  चंदेरी के समय से कदवाया में काम चल रहा है।
+
+Example 10
+  MUNDARI SRC: भाजपा चेतान रे होसोड़ोकाजि राः आरोम लागाओतान लोः इनिः काजिकेदाएः।
+  HINDI REF:   भाजपा पर गलतबयानी का आरोप लगाते हुए उन्होंने कहा कि
+  MODEL PRED:  भाजपा ने चेतान में आरोप लगाने के लिए कहा था।
+
+7. ANDROID PALASH-VOICEBRIDGE NEXT STEPS
+   - Copy exported ONNX graphs and tokenizer assets to PALASH-VoiceBridge `app/src/main/assets/nmt/`.
+   - Add `com.microsoft.onnxruntime:onnxruntime-android` dependency to build.gradle.kts.
+   - Implement SentencePiece Tokenizer Java/C++ wrapper for text encoding/decoding.
+   - Instantiate ORTEnvironment & ORTSession for encoder_model.onnx and decoder_model.onnx.
+   - Perform greedy beam decoding in Kotlin/Java passing forced_bos_token_id dynamically.
