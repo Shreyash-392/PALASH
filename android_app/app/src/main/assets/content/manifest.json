@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "language_pair": {
+    "source": "hin_Deva",
+    "target": "sat_Olck"
+  },
+  "source_language": {
+    "code": "hin_Deva",
+    "name": "Hindi",
+    "native_name": "हिंदी",
+    "script": "Devanagari"
+  },
+  "target_language": {
+    "code": "sat_Olck",
+    "name": "Santali",
+    "native_name": "ᱥᱟᱱᱛᱟᱲᱤ",
+    "script": "Ol Chiki"
+  },
+  "content_summary": {
+    "lessons": 10,
+    "vocabulary": 20,
+    "flashcards": 20,
+    "verified_phrases": 20,
+    "worksheet_templates": 10
+  },
+  "created": "2026-09-02",
+  "notes": "Primary school FLN content for Class 1-2. Santali translations in Ol Chiki script. All verified phrases are sourced from established Santali linguistic resources."
+}

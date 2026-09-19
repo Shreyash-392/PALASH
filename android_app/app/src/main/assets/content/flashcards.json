@@ -1,0 +1,82 @@
+[
+  {
+    "id": "fc_num_001", "category": "numbers", "categoryHindi": "संख्या",
+    "hindi": "एक", "santali": "ᱢᱤᱫ", "english": "one", "emoji": "1️⃣"
+  },
+  {
+    "id": "fc_num_002", "category": "numbers", "categoryHindi": "संख्या",
+    "hindi": "दो", "santali": "ᱵᱟᱨᱤᱭᱟ", "english": "two", "emoji": "2️⃣"
+  },
+  {
+    "id": "fc_num_003", "category": "numbers", "categoryHindi": "संख्या",
+    "hindi": "तीन", "santali": "ᱯᱮᱭᱟ", "english": "three", "emoji": "3️⃣"
+  },
+  {
+    "id": "fc_num_004", "category": "numbers", "categoryHindi": "संख्या",
+    "hindi": "चार", "santali": "ᱯᱩᱱ", "english": "four", "emoji": "4️⃣"
+  },
+  {
+    "id": "fc_num_005", "category": "numbers", "categoryHindi": "संख्या",
+    "hindi": "पाँच", "santali": "ᱢᱚᱬᱮ", "english": "five", "emoji": "5️⃣"
+  },
+  {
+    "id": "fc_animal_001", "category": "animals", "categoryHindi": "जानवर",
+    "hindi": "बिल्ली", "santali": "ᱢᱤᱭᱟᱣᱸ", "english": "cat", "emoji": "🐱"
+  },
+  {
+    "id": "fc_animal_002", "category": "animals", "categoryHindi": "जानवर",
+    "hindi": "कुत्ता", "santali": "ᱥᱮᱛᱟ", "english": "dog", "emoji": "🐶"
+  },
+  {
+    "id": "fc_animal_003", "category": "animals", "categoryHindi": "जानवर",
+    "hindi": "गाय", "santali": "ᱜᱟᱹᱭ", "english": "cow", "emoji": "🐄"
+  },
+  {
+    "id": "fc_animal_004", "category": "animals", "categoryHindi": "जानवर",
+    "hindi": "चिड़िया", "santali": "ᱪᱮᱬᱮ", "english": "bird", "emoji": "🐦"
+  },
+  {
+    "id": "fc_animal_005", "category": "animals", "categoryHindi": "जानवर",
+    "hindi": "मछली", "santali": "ᱦᱟᱹᱠᱩ", "english": "fish", "emoji": "🐟"
+  },
+  {
+    "id": "fc_color_001", "category": "colors", "categoryHindi": "रंग",
+    "hindi": "लाल", "santali": "ᱟᱨᱟᱜ", "english": "red", "emoji": "🔴"
+  },
+  {
+    "id": "fc_color_002", "category": "colors", "categoryHindi": "रंग",
+    "hindi": "नीला", "santali": "ᱦᱮᱞᱮᱫ", "english": "blue", "emoji": "🔵"
+  },
+  {
+    "id": "fc_color_003", "category": "colors", "categoryHindi": "रंग",
+    "hindi": "हरा", "santali": "ᱥᱟᱥᱟᱝ", "english": "green", "emoji": "🟢"
+  },
+  {
+    "id": "fc_color_004", "category": "colors", "categoryHindi": "रंग",
+    "hindi": "पीला", "santali": "ᱥᱟᱥᱟᱝᱟᱨᱟᱜ", "english": "yellow", "emoji": "🟡"
+  },
+  {
+    "id": "fc_shape_001", "category": "shapes", "categoryHindi": "आकार",
+    "hindi": "गोला", "santali": "ᱜᱩᱱᱰᱩᱨᱤ", "english": "circle", "emoji": "⭕"
+  },
+  {
+    "id": "fc_shape_002", "category": "shapes", "categoryHindi": "आकार",
+    "hindi": "चौकोर", "santali": "ᱪᱟᱶᱠᱚᱱ", "english": "square", "emoji": "⬜"
+  },
+  {
+    "id": "fc_shape_003", "category": "shapes", "categoryHindi": "आकार",
+    "hindi": "तिकोन", "santali": "ᱛᱤᱱᱠᱚᱬᱤᱭᱟ", "english": "triangle", "emoji": "🔺"
+  },
+  {
+    "id": "fc_object_001", "category": "objects", "categoryHindi": "वस्तुएँ",
+    "hindi": "किताब", "santali": "ᱯᱩᱛᱷᱤ", "english": "book", "emoji": "📖"
+  },
+  {
+    "id": "fc_object_002", "category": "objects", "categoryHindi": "वस्तुएँ",
+    "hindi": "कलम", "santali": "ᱠᱟᱞᱟᱢ", "english": "pen", "emoji": "🖊️"
+  },
+  {
+    "id": "fc_object_003", "category": "objects", "categoryHindi": "वस्तुएँ",
+    "hindi": "पानी", "santali": "ᱫᱟᱹᱜ", "english": "water", "emoji": "💧"
+  }
+]

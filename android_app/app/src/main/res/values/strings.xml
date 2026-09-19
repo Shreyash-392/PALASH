@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">PALASH VoiceBridge</string>
+    <string name="app_tagline">Teach in the language children understand.</string>
+    <string name="app_tagline_hindi">बच्चों की भाषा में पढ़ाएँ।</string>
+
+    <!-- Home Screen -->
+    <string name="home_voice_translate">🎤 बोलकर अनुवाद करें</string>
+    <string name="home_lessons">📚 पाठ और गतिविधियाँ</string>
+    <string name="home_worksheets">📝 द्विभाषी वर्कशीट</string>
+    <string name="home_flashcards">🃏 फ्लैशकार्ड</string>
+
+    <!-- Voice Screen -->
+    <string name="voice_title">बोलकर अनुवाद</string>
+    <string name="voice_press_mic">माइक दबाएँ और बोलें</string>
+    <string name="voice_listening">सुन रहे हैं…</string>
+    <string name="voice_processing">अनुवाद हो रहा है…</string>
+    <string name="voice_you_said">आपने कहा:</string>
+    <string name="voice_santali">संताली:</string>
+    <string name="voice_listen">🔊 सुनें</string>
+    <string name="voice_offline_ai">Offline AI ✓</string>
+
+    <!-- Lessons -->
+    <string name="lessons_title">पाठ और गतिविधियाँ</string>
+    <string name="lessons_class">कक्षा</string>
+    <string name="lessons_subject">विषय</string>
+    <string name="lessons_topic">विषय</string>
+    <string name="lessons_play_santali">संताली सुनें</string>
+    <string name="lessons_activity">गतिविधि</string>
+    <string name="lessons_assessment">मूल्यांकन</string>
+    <string name="lessons_learning_outcome">सीखने का परिणाम</string>
+
+    <!-- Worksheets -->
+    <string name="worksheets_title">द्विभाषी वर्कशीट</string>
+    <string name="worksheets_generate">वर्कशीट बनाएँ</string>
+    <string name="worksheets_preview">पूर्वावलोकन</string>
+    <string name="worksheets_export_pdf">PDF निर्यात</string>
+    <string name="worksheets_question_count">प्रश्नों की संख्या</string>
+    <string name="worksheets_bilingual">द्विभाषी</string>
+
+    <!-- Flashcards -->
+    <string name="flashcards_title">फ्लैशकार्ड</string>
+    <string name="flashcards_next">अगला</string>
+    <string name="flashcards_previous">पिछला</string>
+    <string name="flashcards_play_audio">ऑडियो सुनें</string>
+
+    <!-- Settings -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_model_status">मॉडल स्थिति</string>
+    <string name="settings_device_info">डिवाइस जानकारी</string>
+    <string name="settings_language_pack">भाषा पैक</string>
+
+    <!-- Common -->
+    <string name="offline">● OFFLINE</string>
+    <string name="lang_pair">Hindi → Santali</string>
+    <string name="script_name">Ol Chiki</string>
+    <string name="hindi">हिंदी</string>
+    <string name="santali">संताली</string>
+</resources>

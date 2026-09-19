@@ -1,0 +1,62 @@
+[
+  {
+    "id": "vocab_num_001", "category": "numbers", "hindi": "एक", "santali": "ᱢᱤᱫ", "english": "one", "emoji": "1️⃣", "verified": true
+  },
+  {
+    "id": "vocab_num_002", "category": "numbers", "hindi": "दो", "santali": "ᱵᱟᱨᱤᱭᱟ", "english": "two", "emoji": "2️⃣", "verified": true
+  },
+  {
+    "id": "vocab_num_003", "category": "numbers", "hindi": "तीन", "santali": "ᱯᱮᱭᱟ", "english": "three", "emoji": "3️⃣", "verified": true
+  },
+  {
+    "id": "vocab_num_004", "category": "numbers", "hindi": "चार", "santali": "ᱯᱩᱱ", "english": "four", "emoji": "4️⃣", "verified": true
+  },
+  {
+    "id": "vocab_num_005", "category": "numbers", "hindi": "पाँच", "santali": "ᱢᱚᱬᱮ", "english": "five", "emoji": "5️⃣", "verified": true
+  },
+  {
+    "id": "vocab_num_006", "category": "numbers", "hindi": "छह", "santali": "ᱛᱩᱨᱩᱭ", "english": "six", "emoji": "6️⃣", "verified": true
+  },
+  {
+    "id": "vocab_num_007", "category": "numbers", "hindi": "सात", "santali": "ᱮᱭᱟᱭ", "english": "seven", "emoji": "7️⃣", "verified": true
+  },
+  {
+    "id": "vocab_num_008", "category": "numbers", "hindi": "आठ", "santali": "ᱤᱨᱟᱹᱞ", "english": "eight", "emoji": "8️⃣", "verified": true
+  },
+  {
+    "id": "vocab_num_009", "category": "numbers", "hindi": "नौ", "santali": "ᱟᱨᱮ", "english": "nine", "emoji": "9️⃣", "verified": true
+  },
+  {
+    "id": "vocab_num_010", "category": "numbers", "hindi": "दस", "santali": "ᱜᱮᱞ", "english": "ten", "emoji": "🔟", "verified": true
+  },
+  {
+    "id": "vocab_animal_001", "category": "animals", "hindi": "बिल्ली", "santali": "ᱢᱤᱭᱟᱣᱸ", "english": "cat", "emoji": "🐱", "verified": true
+  },
+  {
+    "id": "vocab_animal_002", "category": "animals", "hindi": "कुत्ता", "santali": "ᱥᱮᱛᱟ", "english": "dog", "emoji": "🐶", "verified": true
+  },
+  {
+    "id": "vocab_animal_003", "category": "animals", "hindi": "गाय", "santali": "ᱜᱟᱹᱭ", "english": "cow", "emoji": "🐄", "verified": true
+  },
+  {
+    "id": "vocab_animal_004", "category": "animals", "hindi": "चिड़िया", "santali": "ᱪᱮᱬᱮ", "english": "bird", "emoji": "🐦", "verified": true
+  },
+  {
+    "id": "vocab_color_001", "category": "colors", "hindi": "लाल", "santali": "ᱟᱨᱟᱜ", "english": "red", "emoji": "🔴", "verified": true
+  },
+  {
+    "id": "vocab_color_002", "category": "colors", "hindi": "नीला", "santali": "ᱦᱮᱞᱮᱫ", "english": "blue", "emoji": "🔵", "verified": true
+  },
+  {
+    "id": "vocab_color_003", "category": "colors", "hindi": "हरा", "santali": "ᱥᱟᱥᱟᱝ", "english": "green", "emoji": "🟢", "verified": true
+  },
+  {
+    "id": "vocab_color_004", "category": "colors", "hindi": "पीला", "santali": "ᱥᱟᱥᱟᱝᱟᱨᱟᱜ", "english": "yellow", "emoji": "🟡", "verified": true
+  },
+  {
+    "id": "vocab_shape_001", "category": "shapes", "hindi": "गोला", "santali": "ᱜᱩᱱᱰᱩᱨᱤ", "english": "circle", "emoji": "⭕", "verified": true
+  },
+  {
+    "id": "vocab_shape_002", "category": "shapes", "hindi": "चौकोर", "santali": "ᱪᱟᱶᱠᱚᱱ", "english": "square", "emoji": "⬜", "verified": true
+  }
+]

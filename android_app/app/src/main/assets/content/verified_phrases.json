@@ -1,0 +1,182 @@
+[
+  {
+    "id": "phrase_classroom_001",
+    "hindi": "बच्चों, आज हम गिनती सीखेंगे।",
+    "santali": "ᱜᱤᱫᱽᱨᱟᱹᱢᱚᱱ, ᱛᱤᱱᱟᱹᱜ ᱟᱞᱮ ᱞᱮᱠᱷᱟ ᱥᱮᱪᱮᱫ ᱟᱹᱞᱮ᱾",
+    "category": "classroom",
+    "hindi_normalized": "बच्चों, आज हम गिनती सीखेंगे।",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_classroom_002",
+    "hindi": "दो और तीन को जोड़ो।",
+    "santali": "ᱵᱟᱨᱤᱭᱟ ᱟᱨ ᱯᱮᱭᱟ ᱛᱮᱞᱟᱜ ᱢᱮ᱾",
+    "category": "math",
+    "hindi_normalized": "दो और तीन को जोड़ो।",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_classroom_003",
+    "hindi": "यह कौन सा आकार है?",
+    "santali": "ᱱᱩᱤ ᱚᱠᱛᱚ ᱫᱷᱟᱹᱞᱟ ᱠᱟᱱᱟ?",
+    "category": "math",
+    "hindi_normalized": "यह कौन सा आकार है?",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_classroom_004",
+    "hindi": "कितने सेब हैं?",
+    "santali": "ᱪᱮᱫ ᱜᱚᱴᱟ ᱥᱮᱵ ᱢᱮᱱᱟᱜ ᱟ?",
+    "category": "math",
+    "hindi_normalized": "कितने सेब हैं?",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_classroom_005",
+    "hindi": "सब मिलकर बोलो।",
+    "santali": "ᱡᱷᱚᱛᱚ ᱢᱤᱫ ᱛᱟᱦᱮᱸᱱ ᱨᱚᱲ ᱯᱮ᱾",
+    "category": "classroom",
+    "hindi_normalized": "सब मिलकर बोलो।",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_classroom_006",
+    "hindi": "अपनी किताब खोलो।",
+    "santali": "ᱟᱢᱟᱜ ᱯᱩᱛᱷᱤ ᱡᱷᱤᱡ ᱢᱮ᱾",
+    "category": "classroom",
+    "hindi_normalized": "अपनी किताब खोलो।",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_classroom_007",
+    "hindi": "ध्यान से सुनो।",
+    "santali": "ᱥᱟᱶᱛᱟ ᱛᱮ ᱟᱹᱭᱠᱟᱹᱣ ᱢᱮ᱾",
+    "category": "classroom",
+    "hindi_normalized": "ध्यान से सुनो।",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_classroom_008",
+    "hindi": "यह सही जवाब है।",
+    "santali": "ᱱᱩᱤ ᱴᱷᱤᱠ ᱴᱤᱱᱟᱹᱜ ᱠᱟᱱᱟ᱾",
+    "category": "classroom",
+    "hindi_normalized": "यह सही जवाब है।",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_classroom_009",
+    "hindi": "बहुत अच्छा!",
+    "santali": "ᱟᱹᱰᱤ ᱵᱩᱜᱤᱱ!",
+    "category": "classroom",
+    "hindi_normalized": "बहुत अच्छा!",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_classroom_010",
+    "hindi": "एक बार फिर से बोलो।",
+    "santali": "ᱢᱤᱫ ᱵᱟᱨ ᱟᱨᱦᱚᱸ ᱨᱚᱲ ᱯᱮ᱾",
+    "category": "classroom",
+    "hindi_normalized": "एक बार फिर से बोलो।",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_math_001",
+    "hindi": "एक और एक कितने होते हैं?",
+    "santali": "ᱢᱤᱫ ᱟᱨ ᱢᱤᱫ ᱪᱮᱫ ᱦᱩᱭᱩᱜ ᱟ?",
+    "category": "math",
+    "hindi_normalized": "एक और एक कितने होते हैं?",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_math_002",
+    "hindi": "पाँच में से दो घटाओ।",
+    "santali": "ᱢᱚᱬᱮ ᱦᱚᱸ ᱛᱮ ᱵᱟᱨᱤᱭᱟ ᱦᱤᱥᱟᱹᱵ ᱢᱮ᱾",
+    "category": "math",
+    "hindi_normalized": "पाँच में से दो घटाओ।",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_math_003",
+    "hindi": "गिनती बोलो: एक, दो, तीन।",
+    "santali": "ᱞᱮᱠᱷᱟ ᱨᱚᱲ ᱯᱮ: ᱢᱤᱫ, ᱵᱟᱨᱤᱭᱟ, ᱯᱮᱭᱟ᱾",
+    "category": "math",
+    "hindi_normalized": "गिनती बोलो: एक, दो, तीन।",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_math_004",
+    "hindi": "कौन सी संख्या बड़ी है?",
+    "santali": "ᱚᱠᱟ ᱞᱮᱠᱷᱟ ᱢᱟᱨᱟᱝ ᱠᱟᱱᱟ?",
+    "category": "math",
+    "hindi_normalized": "कौन सी संख्या बड़ी है?",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_math_005",
+    "hindi": "यह गोल आकार है।",
+    "santali": "ᱱᱩᱤ ᱜᱩᱱᱰᱩᱨᱤ ᱫᱷᱟᱹᱞᱟ ᱠᱟᱱᱟ᱾",
+    "category": "math",
+    "hindi_normalized": "यह गोल आकार है।",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_literacy_001",
+    "hindi": "यह अक्षर 'अ' है।",
+    "santali": "ᱱᱩᱤ ᱟᱠᱷᱟᱨ 'ᱚ' ᱠᱟᱱᱟ᱾",
+    "category": "literacy",
+    "hindi_normalized": "यह अक्षर 'अ' है।",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_literacy_002",
+    "hindi": "इस शब्द को पढ़ो।",
+    "santali": "ᱱᱩᱤ ᱨᱚᱲ ᱯᱟᱲᱦᱟᱣ ᱢᱮ᱾",
+    "category": "literacy",
+    "hindi_normalized": "इस शब्द को पढ़ो।",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_literacy_003",
+    "hindi": "चित्र देखो और बताओ।",
+    "santali": "ᱪᱤᱛᱟᱹᱨ ᱧᱮᱞ ᱢᱮ ᱟᱨ ᱩᱫᱩᱜ ᱢᱮ᱾",
+    "category": "literacy",
+    "hindi_normalized": "चित्र देखो और बताओ।",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_greeting_001",
+    "hindi": "नमस्ते बच्चों!",
+    "santali": "ᱡᱚᱦᱟᱨ ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ!",
+    "category": "greeting",
+    "hindi_normalized": "नमस्ते बच्चों!",
+    "audio_file": null,
+    "verified": true
+  },
+  {
+    "id": "phrase_greeting_002",
+    "hindi": "कल फिर मिलेंगे।",
+    "santali": "ᱜᱟᱯᱟ ᱟᱨᱦᱚᱸ ᱧᱟᱢ ᱞᱮᱱᱟ᱾",
+    "category": "greeting",
+    "hindi_normalized": "कल फिर मिलेंगे।",
+    "audio_file": null,
+    "verified": true
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "ws_counting_001",
+    "classLevel": 1, "subject": "Mathematics", "subjectHindi": "गणित",
+    "topic": "Counting", "topicHindi": "गिनती",
+    "questionType": "COUNTING",
+    "instructionHindi": "वस्तुएँ गिनो और संख्या लिखो।",
+    "instructionSantali": "ᱵᱚᱥᱛᱩ ᱠᱚ ᱞᱮᱠᱷᱟ ᱢᱮ ᱟᱨ ᱞᱮᱠᱷᱟ ᱚᱞ ᱢᱮ᱾",
+    "questions": [
+      {"id": "q1", "questionHindi": "🍎🍎🍎 कितने सेब हैं?", "questionSantali": "🍎🍎🍎 ᱪᱮᱫ ᱜᱚᱴᱟ ᱥᱮᱵ ᱢᱮᱱᱟᱜ ᱟ?", "answer": "3"},
+      {"id": "q2", "questionHindi": "⭐⭐⭐⭐⭐ कितने तारे हैं?", "questionSantali": "⭐⭐⭐⭐⭐ ᱪᱮᱫ ᱜᱚᱴᱟ ᱤᱯᱤᱞ ᱢᱮᱱᱟᱜ ᱟ?", "answer": "5"},
+      {"id": "q3", "questionHindi": "🌺🌺 कितने फूल हैं?", "questionSantali": "🌺🌺 ᱪᱮᱫ ᱜᱚᱴᱟ ᱵᱟᱦᱟ ᱢᱮᱱᱟᱜ ᱟ?", "answer": "2"}
+    ]
+  },
+  {
+    "id": "ws_addition_001",
+    "classLevel": 2, "subject": "Mathematics", "subjectHindi": "गणित",
+    "topic": "Addition", "topicHindi": "जोड़",
+    "questionType": "ADDITION",
+    "instructionHindi": "जोड़ करो और उत्तर लिखो।",
+    "instructionSantali": "ᱛᱮᱞᱟᱜ ᱢᱮ ᱟᱨ ᱴᱤᱱᱟᱹᱜ ᱚᱞ ᱢᱮ᱾",
+    "questions": [
+      {"id": "q1", "questionHindi": "2 + 3 = ?", "questionSantali": "᱒ + ᱓ = ?", "answer": "5"},
+      {"id": "q2", "questionHindi": "4 + 1 = ?", "questionSantali": "᱔ + ᱑ = ?", "answer": "5"},
+      {"id": "q3", "questionHindi": "3 + 3 = ?", "questionSantali": "᱓ + ᱓ = ?", "answer": "6"}
+    ]
+  },
+  {
+    "id": "ws_matching_001",
+    "classLevel": 1, "subject": "Mathematics", "subjectHindi": "गणित",
+    "topic": "Matching", "topicHindi": "मिलान",
+    "questionType": "MATCHING",
+    "instructionHindi": "सही जोड़ी मिलाओ।",
+    "instructionSantali": "ᱴᱷᱤᱠ ᱡᱩᱲᱤ ᱢᱤᱞᱟᱣ ᱢᱮ᱾",
+    "questions": [
+      {"id": "q1", "questionHindi": "🍎🍎 → कितने?", "questionSantali": "🍎🍎 → ᱪᱮᱫ?", "answer": "2", "options": ["1", "2", "3"], "optionsSantali": ["ᱢᱤᱫ", "ᱵᱟᱨᱤᱭᱟ", "ᱯᱮᱭᱟ"]},
+      {"id": "q2", "questionHindi": "⭐⭐⭐⭐ → कितने?", "questionSantali": "⭐⭐⭐⭐ → ᱪᱮᱫ?", "answer": "4", "options": ["3", "4", "5"], "optionsSantali": ["ᱯᱮᱭᱟ", "ᱯᱩᱱ", "ᱢᱚᱬᱮ"]},
+      {"id": "q3", "questionHindi": "🌺 → कितने?", "questionSantali": "🌺 → ᱪᱮᱫ?", "answer": "1", "options": ["1", "2", "3"], "optionsSantali": ["ᱢᱤᱫ", "ᱵᱟᱨᱤᱭᱟ", "ᱯᱮᱭᱟ"]}
+    ]
+  },
+  {
+    "id": "ws_fill_blank_001",
+    "classLevel": 2, "subject": "Mathematics", "subjectHindi": "गणित",
+    "topic": "Fill in the Blank", "topicHindi": "रिक्त स्थान भरो",
+    "questionType": "FILL_IN_THE_BLANK",
+    "instructionHindi": "रिक्त स्थान भरो।",
+    "instructionSantali": "ᱡᱟᱭᱜᱟ ᱯᱩᱨᱟᱹᱣ ᱢᱮ᱾",
+    "questions": [
+      {"id": "q1", "questionHindi": "1, 2, ___, 4, 5", "questionSantali": "᱑, ᱒, ___, ᱔, ᱕", "answer": "3"},
+      {"id": "q2", "questionHindi": "2 + ___ = 5", "questionSantali": "᱒ + ___ = ᱕", "answer": "3"},
+      {"id": "q3", "questionHindi": "4, ___, 6, 7", "questionSantali": "᱔, ___, ᱖, ᱗", "answer": "5"}
+    ]
+  },
+  {
+    "id": "ws_mcq_001",
+    "classLevel": 2, "subject": "Mathematics", "subjectHindi": "गणित",
+    "topic": "Multiple Choice", "topicHindi": "बहुविकल्पीय",
+    "questionType": "MULTIPLE_CHOICE",
+    "instructionHindi": "सही उत्तर चुनो।",
+    "instructionSantali": "ᱴᱷᱤᱠ ᱴᱤᱱᱟᱹᱜ ᱵᱟᱪᱷᱟᱣ ᱢᱮ᱾",
+    "questions": [
+      {"id": "q1", "questionHindi": "3 + 2 = ?", "questionSantali": "᱓ + ᱒ = ?", "answer": "5", "options": ["4", "5", "6"], "optionsSantali": ["ᱯᱩᱱ", "ᱢᱚᱬᱮ", "ᱛᱩᱨᱩᱭ"]},
+      {"id": "q2", "questionHindi": "कौन सी संख्या बड़ी है: 7 या 4?", "questionSantali": "ᱚᱠᱟ ᱞᱮᱠᱷᱟ ᱢᱟᱨᱟᱝ ᱠᱟᱱᱟ: ᱗ ᱟᱨ ᱔?", "answer": "7", "options": ["4", "7"], "optionsSantali": ["ᱯᱩᱱ", "ᱮᱭᱟᱭ"]},
+      {"id": "q3", "questionHindi": "5 + 5 = ?", "questionSantali": "᱕ + ᱕ = ?", "answer": "10", "options": ["8", "9", "10"], "optionsSantali": ["ᱤᱨᱟᱹᱞ", "ᱟᱨᱮ", "ᱜᱮᱞ"]}
+    ]
+  },
+  {
+    "id": "ws_comparison_001",
+    "classLevel": 2, "subject": "Mathematics", "subjectHindi": "गणित",
+    "topic": "Comparison", "topicHindi": "तुलना",
+    "questionType": "COMPARISON",
+    "instructionHindi": "बड़ी संख्या पर गोला लगाओ।",
+    "instructionSantali": "ᱢᱟᱨᱟᱝ ᱞᱮᱠᱷᱟ ᱨᱮ ᱜᱩᱱᱰᱩᱨᱤ ᱛᱮᱭᱟᱨ ᱢᱮ᱾",
+    "questions": [
+      {"id": "q1", "questionHindi": "3 और 5 में कौन बड़ा?", "questionSantali": "ᱯᱮᱭᱟ ᱟᱨ ᱢᱚᱬᱮ ᱨᱮ ᱚᱠᱟ ᱢᱟᱨᱟᱝ?", "answer": "5"},
+      {"id": "q2", "questionHindi": "8 और 6 में कौन बड़ा?", "questionSantali": "ᱤᱨᱟᱹᱞ ᱟᱨ ᱛᱩᱨᱩᱭ ᱨᱮ ᱚᱠᱟ ᱢᱟᱨᱟᱝ?", "answer": "8"},
+      {"id": "q3", "questionHindi": "2 और 9 में कौन बड़ा?", "questionSantali": "ᱵᱟᱨᱤᱭᱟ ᱟᱨ ᱟᱨᱮ ᱨᱮ ᱚᱠᱟ ᱢᱟᱨᱟᱝ?", "answer": "9"}
+    ]
+  },
+  {
+    "id": "ws_circle_001",
+    "classLevel": 1, "subject": "Mathematics", "subjectHindi": "गणित",
+    "topic": "Circle Answer", "topicHindi": "सही उत्तर पर गोला",
+    "questionType": "CIRCLE_ANSWER",
+    "instructionHindi": "सही उत्तर पर गोला लगाओ।",
+    "instructionSantali": "ᱴᱷᱤᱠ ᱴᱤᱱᱟᱹᱜ ᱨᱮ ᱜᱩᱱᱰᱩᱨᱤ ᱛᱮᱭᱟᱨ ᱢᱮ᱾",
+    "questions": [
+      {"id": "q1", "questionHindi": "1 + 1 = ?", "questionSantali": "᱑ + ᱑ = ?", "answer": "2", "options": ["1", "2", "3"], "optionsSantali": ["ᱢᱤᱫ", "ᱵᱟᱨᱤᱭᱟ", "ᱯᱮᱭᱟ"]},
+      {"id": "q2", "questionHindi": "कौन सा आकार गोल है?", "questionSantali": "ᱚᱠᱟ ᱫᱷᱟᱹᱞᱟ ᱜᱩᱱᱰᱩᱨᱤ ᱠᱟᱱᱟ?", "answer": "⭕", "options": ["⬜", "⭕", "🔺"], "optionsSantali": ["ᱪᱟᱶᱠᱚᱱ", "ᱜᱩᱱᱰᱩᱨᱤ", "ᱛᱤᱱᱠᱚᱬᱤᱭᱟ"]},
+      {"id": "q3", "questionHindi": "🐄 का नाम क्या है?", "questionSantali": "🐄 ᱨᱮᱭᱟᱜ ᱱᱩᱛᱩᱢ ᱪᱤᱠᱟᱹ ᱠᱟᱱᱟ?", "answer": "गाय", "options": ["बिल्ली", "कुत्ता", "गाय"], "optionsSantali": ["ᱢᱤᱭᱟᱣᱸ", "ᱥᱮᱛᱟ", "ᱜᱟᱹᱭ"]}
+    ]
+  },
+  {
+    "id": "ws_counting_002",
+    "classLevel": 1, "subject": "Mathematics", "subjectHindi": "गणित",
+    "topic": "Counting", "topicHindi": "गिनती",
+    "questionType": "COUNTING",
+    "instructionHindi": "गिनो और लिखो।",
+    "instructionSantali": "ᱞᱮᱠᱷᱟ ᱢᱮ ᱟᱨ ᱚᱞ ᱢᱮ᱾",
+    "questions": [
+      {"id": "q1", "questionHindi": "🐦🐦🐦🐦 कितनी चिड़ियाँ?", "questionSantali": "🐦🐦🐦🐦 ᱪᱮᱫ ᱜᱚᱴᱟ ᱪᱮᱬᱮ?", "answer": "4"},
+      {"id": "q2", "questionHindi": "📖📖📖📖📖📖 कितनी किताबें?", "questionSantali": "📖📖📖📖📖📖 ᱪᱮᱫ ᱜᱚᱴᱟ ᱯᱩᱛᱷᱤ?", "answer": "6"},
+      {"id": "q3", "questionHindi": "✏️✏️✏️✏️✏️✏️✏️ कितनी पेंसिल?", "questionSantali": "✏️✏️✏️✏️✏️✏️✏️ ᱪᱮᱫ ᱜᱚᱴᱟ ᱯᱮᱱᱥᱤᱞ?", "answer": "7"}
+    ]
+  },
+  {
+    "id": "ws_addition_002",
+    "classLevel": 2, "subject": "Mathematics", "subjectHindi": "गणित",
+    "topic": "Addition", "topicHindi": "जोड़",
+    "questionType": "ADDITION",
+    "instructionHindi": "जोड़ करो।",
+    "instructionSantali": "ᱛᱮᱞᱟᱜ ᱢᱮ᱾",
+    "questions": [
+      {"id": "q1", "questionHindi": "1 + 4 = ?", "questionSantali": "᱑ + ᱔ = ?", "answer": "5"},
+      {"id": "q2", "questionHindi": "3 + 4 = ?", "questionSantali": "᱓ + ᱔ = ?", "answer": "7"},
+      {"id": "q3", "questionHindi": "5 + 3 = ?", "questionSantali": "᱕ + ᱓ = ?", "answer": "8"}
+    ]
+  },
+  {
+    "id": "ws_fill_blank_002",
+    "classLevel": 2, "subject": "Language", "subjectHindi": "भाषा",
+    "topic": "Fill in the Blank", "topicHindi": "रिक्त स्थान भरो",
+    "questionType": "FILL_IN_THE_BLANK",
+    "instructionHindi": "सही शब्द भरो।",
+    "instructionSantali": "ᱴᱷᱤᱠ ᱨᱚᱲ ᱯᱩᱨᱟᱹᱣ ᱢᱮ᱾",
+    "questions": [
+      {"id": "q1", "questionHindi": "गाय ___ खाती है। (घास/पानी)", "questionSantali": "ᱜᱟᱹᱭ ___ ᱡᱚᱢ ᱟ᱾ (ᱜᱷᱟᱥ/ᱫᱟᱹᱜ)", "answer": "घास"},
+      {"id": "q2", "questionHindi": "सूरज ___ में निकलता है। (सुबह/रात)", "questionSantali": "ᱥᱤᱧ ᱪᱟᱸᱫᱚ ___ ᱨᱮ ᱚᱰᱚᱠ ᱟ᱾ (ᱥᱮᱛᱟᱜ/ᱱᱤᱫᱟᱹ)", "answer": "सुबह"},
+      {"id": "q3", "questionHindi": "बच्चे ___ में पढ़ते हैं। (स्कूल/बाज़ार)", "questionSantali": "ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ ___ ᱨᱮ ᱯᱟᱲᱦᱟᱣ ᱟ᱾ (ᱤᱥᱠᱩᱞ/ᱦᱟᱴ)", "answer": "स्कूल"}
+    ]
+  }
+]
